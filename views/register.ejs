@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="/js/scripts.js" nonce="<%= nonce %>"></script>
+</head>
+<body>
+    <form id="registration-form" method="POST" action="/register">
+        <input type="text" id="username" name="username" placeholder="Username">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

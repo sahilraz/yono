@@ -1,0 +1,1 @@
+npm install express mysql body-parser crypto express-session uuid helmet csurf express-rate-limit dotenv cookie-parser ejs
