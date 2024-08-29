@@ -78,7 +78,7 @@ app.use(limiter);
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "173.211.81.11",
   user: process.env.DB_USER || "iccmclfm_yono",
   password: process.env.DB_PASSWORD || "iccmclfm_yono",
   database: process.env.DB_NAME,
